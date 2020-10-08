@@ -1,20 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 92%;
+  margin: 0 auto;
+`
+
+export const Listing = styled.ul`
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h1 {
-    font-size: 54px;
-    color: ${(props) => props.theme.colors.primary};
-    margin-top: 40px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  li {
+    cursor: pointer;
+    margin-bottom: 5%;
+    > img {
+      width: 232px;
+      height: 262px;
+      object-fit:cover;
+    }
   }
-  p {
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-`;
+`
