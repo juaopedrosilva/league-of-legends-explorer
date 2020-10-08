@@ -7,10 +7,10 @@ export default function Home({ data }) {
     <Container>
       <Listing>
         {Object.keys(data).map(key => {
-          const {  name } = data[key]
+          const { name } = data[key]
           return (
             <>
-              <Link href={`champion/${name}`}>
+              <Link href={`champion/${key}`}>
                 <li key={key}>
                   <img  
                     src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${key}_0.jpg`}

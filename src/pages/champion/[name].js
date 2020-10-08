@@ -2,11 +2,11 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 
 export default function Champio({ champio }) {
-  const { name, blurb } = champio
+  const { id, name, blurb } = champio
 
   return (
     <div>
-      <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${name}_0.jpg`} width={1000} alt={name}/>
+      <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`} width={1000} alt={name}/>
       <h2>{name}</h2>
       <p>{blurb}</p>
     </div>
