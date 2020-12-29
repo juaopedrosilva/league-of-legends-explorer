@@ -11,14 +11,9 @@ export const Listing = styled.ul`
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
   li {
     cursor: pointer;
     margin-bottom: 5%;
-    > img {
-      width: 232px;
-      height: 262px;
-      object-fit:cover;
-    }
   }
 `
