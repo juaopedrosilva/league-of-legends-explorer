@@ -5,7 +5,7 @@ const api = axios.create({
 })
 
 api.interceptors.request.use(function (config) {
-  config.headers['X-Riot-Token'] = 'RGAPI-4dd2caee-58fd-4730-9e4f-cad24f369aac'
+  config.headers['X-Riot-Token'] = 'RGAPI-21e1fb2a-7a24-4744-8e45-fb37aa9e72a5'
 
   return config
 })

@@ -21,8 +21,8 @@ export default function Summeoner() {
       {data && (
         <div>
           <Image
-            src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${find(data.masters[0]?.championId).id}_3.jpg`}
-            width={1215}
+            src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${find(data.masters[0]?.championId).id}_0.jpg`}
+            width={1415}
             height={717}
             qualit={100}
             loading={'eager'}
